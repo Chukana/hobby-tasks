@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "FuturaStd-Med";  
+    src: url("../cosmo/fonts/futura/FUB_____.TTF") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face {
+    font-family: "FuturLig";  
+    src: url("../cosmo/fonts/futura/FUB_____.TTF") format("truetype"); 
+    font-style: normal; 
+    font-weight: lighter;
+}
+.main {
+    width: 1920px;
+    
+    background-image: url(../cosmo/icons/make-up.png);
+    background-repeat: no-repeat;
+    background-position: 1100px;
+}
+
+.main_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    font-family: "FuturaStd-Med";
+    font-size: 41px;
+    font-weight: 100;
+    color: #f766b4;
+    margin-top: 500px;
+}
+.text_part1 {
+    width: 922px;
+    font-family: "FuturLig";
+    font-size: 50px;
+    font-weight: 100;
+    color: #f766b4;   
+}
+.text_part2 {
+    background: linear-gradient(45deg, #ff8665, #ff8bca);
+    font-family: "FuturaStd-Med";
+    font-size: 69px;
+    color: white;
+}
+.text_email {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #333333;
+}
+.email_field {
+    border-color: #f766b4;
+    width: 747px;
+    height: 50px;
+    margin-bottom: 30px;
+    background-image: url('../cosmo/icons/email\ icon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.sumbit {
+    background: #ff8bca;
+    font-family: "FuturaStd-Med";
+    font-size: 41px;
+    color: white;
+}
+.refuse {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline;
+    color: #333333;
+}
