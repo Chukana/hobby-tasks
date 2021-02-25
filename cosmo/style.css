@@ -12,7 +12,7 @@
 
 @media only screen and (min-width: 768px) {
       /* For desktop: */
-    .logo {
+    .main__logo {
         margin-top: 375px;
         margin-left: 7px;
     }
@@ -25,23 +25,14 @@
         height: 1200px;   
     }
 
-    .main_info {
+    .main__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-left: 7px;
     }
-    .title {
-        font-family: "FuturaStd-Med";
-        font-size: 41px;
-        font-weight: 100;
-        color: #f766b4;
-        margin-top: 500px;
-
-        
-    }
-    .text_part1 {
+    .main__title1 {
         width: 922px;
         font-size: 50px;
         letter-spacing: 3.7px;
@@ -53,7 +44,7 @@
         margin-top: 52px;
         margin-bottom: auto;
     }
-    .text_part2 {
+    .main__title2 {
         background: linear-gradient(45deg, #ff8665, #ff8bca);
         width: 897px;
         height: 125px;
@@ -70,7 +61,7 @@
         margin-top: 4px;
         
     }
-    .text_email {
+    .main__title3 {
         font-size: 30px;
         line-height: 37px;
         color: #333333;
@@ -81,16 +72,16 @@
         letter-spacing: 1px;
         margin-bottom: 20px;
     }
-    .email_field {
+    .main__email-field {
         border: 2px solid #f767b4;
         width: 760px;
         height: 60px;
         margin-bottom: 30px;
-        background-image: url('../cosmo/icons/email/icon.png');
+        background-image: url('../cosmo/icons/email\ icon.png');
         background-repeat: no-repeat;
         background-position: 14px center;
     }
-    .submit {
+    .main__submit-form {
         display: flex;
         width: 738px;
         height: 117px;
@@ -98,10 +89,10 @@
         align-items: center;
         background: #ff8bca;
     }
-    .submit:hover {
+    .main__submit-form:hover {
         cursor: pointer;
     }   
-    .submit_contour {
+    .main__submit-contour {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -110,7 +101,7 @@
         border: 2px solid white;
         background: transparent;
     }
-    .submit_text {
+    .main__submit-text {
         font-size: 41px;
         letter-spacing: 1px;
         line-height: 51px;
@@ -119,7 +110,7 @@
         font-family: "Futura Std";
         text-align: center;
     }
-    .refuse {
+    .main__title4 {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: italic;
         font-size: 30px;
@@ -132,29 +123,28 @@
 
 @media only screen and (max-width: 768px) {
     /*mobiles*/
-    .logo {
+    .main__logo {
         width: 30%;
         margin-top: 130px;
     }
     .main {
-        width: 105%;
+        width: 100%;
         background-image: url(../cosmo/icons/BACKGROUND_MOBILE.png);
         background-repeat: no-repeat;
-        background-position-y: -1px;
+        background-position-y: center;
         background-position-x: center;
-        background-size: 102%;
-        height: 1334px;
-        margin: -8px auto;
-        margin-left: -7px;
+        background-size: 100%;
+        height: auto;
+        margin: auto auto;
     }
 
-    .main_info {
+    .main__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .text_part1 {
+    .main__title1 {
         width: 100%;
         font-size: 1em;
         letter-spacing: 4px;
@@ -164,7 +154,7 @@
         text-align: center;
         margin: 10px auto;
     }
-    .text_part2 {
+    .main__title2 {
         background: linear-gradient(45deg, #ff8665, #ff8bca);
         text-align: center;
         font-size: 1.4em;
@@ -179,7 +169,7 @@
         padding: 0 20px;
         
     }
-    .text_email {
+    .main__title3 {
         font-size: 0.9em;
         line-height: 37px;
         color: #333333;
@@ -198,53 +188,53 @@
         border-right: 2px solid #fd9933;
         content: "";
         transform: rotate(45deg);
-        top: 30px;
-        left: 150px;
-      }
-    .text-email::before {
+        top: 40px;
+        left: calc(50% - 2px);
+    }
+    .text_email::before {
         position: absolute;
         padding: 5px;
         border-bottom: 2px solid #fd9933;
         border-right: 2px solid #fd9933;
         content: "";
         transform: rotate(45deg);
-        position: absolute;
         top: 30px;
-        left: 150px;
+        left: calc(50% - 2px);
 
     }
-    .email_field {
+    .main__email-field {
         border: 1px solid #f767b4;
-        width: 100%;
-        height: 2em;
+        width: 97%;
+        height: 2.5em;
         margin: 11px 0;
-        background-image: url('../cosmo/icons/email/icon.png');
+        background-image: url('../cosmo/icons/email\ icon.png');
         background-repeat: no-repeat;
-        background-position: 14px center;
+        background-position: 8px center;
         position: inherit;
+        background-size: 20px;
     }
-    .submit {
+    .main__submit-form {
         display: flex;
-        width: 100%;
-        height: 4em;
+        width: 98%;
+        height: 3.5em;
         justify-content: center;
         align-items: center;
         background: #ff8bca;
     }
-    .submit:hover {
+    .main__submit-form:hover {
         cursor: pointer;
     }
-    .submit_contour {
+    .main__submit-contour {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        height: 2em;
-        border: 2px solid white;
+        width: 97%;
+        height: 2.8em;
+        border: 1px solid white;
         background: transparent;
     }
-    .submit_text {
-        font-size: 1em;
+    .main__submit-text {
+        font-size: 1.1em;
         letter-spacing: 1px;
         line-height: 51px;
         color: #ffffff;
@@ -252,14 +242,15 @@
         font-family: "Futura Std";
         text-align: center;
     }
-    .refuse {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
-        font-size: 30px;
+    .main__title4 {
         text-decoration: underline;
         color: #333333;
-        margin: 18px 0;
-        margin-left: -27px;
+        font-size: 1em;
+        line-height: 2.8em;
+        font-style: italic;
+        font-family: "Georgia";
+        text-align: center;
+        font-weight: 600;
     }
 
 }    
